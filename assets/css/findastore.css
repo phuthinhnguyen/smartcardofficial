@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Calibri";
+  src: url("assets/fonts/calibri/calibri-regular.ttf");
+}
 .findastore-head {
   font-family: "Jost";
   text-align: center;
@@ -117,4 +121,4 @@
     margin-top: 30px;
     height: 500px;
   }
-}/*# sourceMappingURL=findastore.css.map */
+}

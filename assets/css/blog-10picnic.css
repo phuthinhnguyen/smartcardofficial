@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Calibri";
+  src: url("assets/fonts/calibri/calibri-regular.ttf");
+}
 .blog-head {
   font-family: "Jost";
   text-align: center;
@@ -411,4 +415,4 @@
   .blog-10picnic-content-container .blog-10picnic-content-item1 .comment .input-name-email input:last-of-type {
     margin-top: 20px;
   }
-}/*# sourceMappingURL=blog-10picnic.css.map */
+}

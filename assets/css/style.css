@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Calibri";
+  src: url("assets/fonts/calibri/calibri-regular.ttf");
+}
 body a {
   text-decoration: none;
   color: black;
@@ -30,7 +34,7 @@ body ::-webkit-scrollbar-thumb:hover {
 }
 
 .top1 {
-  font-family: "Jost";
+  font-family: "Roboto";
   background-color: rgb(218, 63, 63);
   color: white;
 }
@@ -1823,4 +1827,4 @@ footer .row .last a:hover {
   .img .img-wrap .img-text h1 {
     font-size: 20px;
   }
-}/*# sourceMappingURL=style.css.map */
+}

@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Calibri";
+  src: url("assets/fonts/calibri/calibri-regular.ttf");
+}
 .aboutv1-head {
   font-family: "Jost";
   text-align: center;
@@ -186,4 +190,4 @@
   .aboutv1-content-container .aboutv1-content-img-wrap {
     margin-top: 50px;
   }
-}/*# sourceMappingURL=aboutv1.css.map */
+}

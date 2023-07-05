@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Calibri";
+  src: url("assets/fonts/calibri/calibri-regular.ttf");
+}
 .blog-head {
   font-family: "Jost";
   text-align: center;
@@ -105,4 +109,4 @@
   .blog-content-container {
     grid-template-columns: auto;
   }
-}/*# sourceMappingURL=blog.css.map */
+}

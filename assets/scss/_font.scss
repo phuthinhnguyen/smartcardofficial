@@ -1,3 +1,7 @@
 @mixin font($font){
     font-family: $font;
 }
+@font-face {
+    font-family: 'Calibri';
+    src: url('assets/fonts/calibri/calibri-regular.ttf');
+}

@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Calibri";
+  src: url("assets/fonts/calibri/calibri-regular.ttf");
+}
 body ::-webkit-scrollbar {
   width: 8px;
 }
@@ -1067,4 +1071,4 @@ body ::-webkit-scrollbar-thumb:hover {
   .filter-dropdown-responsive .row .offcanvas-responsive .offcanvas-header .menu-show .filter-dropdown-item4 {
     margin-top: 140px;
   }
-}/*# sourceMappingURL=shop.css.map */
+}

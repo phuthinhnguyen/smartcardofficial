@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Calibri";
+  src: url("assets/fonts/calibri/calibri-regular.ttf");
+}
 .contactus-head {
   font-family: "Jost";
   text-align: center;
@@ -114,4 +118,4 @@
   .contactus-content .contactus-content-container .contactus-content-item .input-name-mail input:last-of-type {
     margin-top: 20px;
   }
-}/*# sourceMappingURL=contactus.css.map */
+}
