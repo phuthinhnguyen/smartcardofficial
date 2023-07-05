@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <title>404 Not Found</title>
+    <style>
+        .page-content{
+            font-family: "Jost";
+            max-width: 1200px;
+            padding: 20px;
+            margin: auto;
+            margin-top: 30px;
+        }
+        .page-content-wrap{
+            width: 100%; 
+            text-align: center;
+        }
+        .page-content-wrap .img{
+            width: 60px;
+            height: 60px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+        .page-content-wrap .img img{
+            width: 100%;
+            height: auto;
+        }
+        .page-content-wrap>h1{
+            font-size: 70px;
+            margin: 0;
+            font-weight: 500;
+            margin-top: 20px;
+        }
+        .page-content-wrap h1:last-of-type{
+            font-weight: 300;
+            font-size: 60px;
+            margin-top: 20px;
+        }
+        .page-content-wrap button{
+            padding: 10px 25px;
+            margin-top: 40px;
+            height: 45px;
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+            transition: transform 0.3s;
+            margin-bottom: 30px;
+        }
+        .page-content-wrap button:hover{
+            cursor: pointer;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <!-- Top -->
+    <div class="top1 container-fluid">
+        <div class="row">
+            <div class="col-12 d-flex align-items-center justify-content-center">Free Delivery on orders over $200. Don’t miss discount.</div>
+            <div class="top1-close"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+    </div>
+    <div class="top2 container-fluid">
+            <div class="row">
+                <div class="col-xxl-4 text-start">
+                    <a href="https://www.instagram.com/phuthinhnguyen1407/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <span>100k Followers</span>
+                    <a class="facebook" href="https://www.facebook.com/profile.php?id=100009223194372" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <span>300k Followers</span>
+                </div>
+                <div class="col-md-9 col-xl-6 col-xxl-4">
+                       <span>Open Doors To A World Of Fashion </span><span>|</span>
+                        <a href=""> Discover More</a>
+                </div>
+                <div class="col-md-3 col-xl-6 col-xxl-4 text-end">
+                    <div class="btn-group">
+                        <a class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Default</a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                          <li><a class="dropdown-item" href="#">Fashion 02</a></li>
+                          <li><a class="dropdown-item" href="#">Fashion 03</a></li>
+                          <li><a class="dropdown-item" href="#">Fashion 04</a></li>
+                          <li><a class="dropdown-item" href="#">Fashion 05</a></li>
+                          <li><a class="dropdown-item" href="#">Fashion 06</a></li>
+                          <li><a class="dropdown-item" href="#">Fashion 07</a></li>
+                          <li><a class="dropdown-item" href="#">Fashion 08</a></li>
+                          <li><a class="dropdown-item" href="#">Fashion 09</a></li>
+                          <li><a class="dropdown-item" href="#">Fashion 10</a></li>
+                          <li><a class="dropdown-item" href="#">Fashion 11</a></li>
+                          <li><a class="dropdown-item" href="#">Fashion 12</a></li>
+                          <li><a class="dropdown-item" href="#">Fashion 13</a></li>
+                          <li><a class="dropdown-item" href="#">Fashion RTL</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group">
+                        <a class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">USD</a>
+                        <ul class="dropdown-menu dropdown-menu-end usd">
+                          <li><a class="dropdown-item" href="#">GBP</a></li>
+                          <li><a class="dropdown-item" href="#">EUR</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <nav class="container-fluid">
+        <div class="row d-flex align-items-center">
+            <div class="col-4 left">
+                <ul>
+                    <li>
+                        <a href="index.html">Demo<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                        <div class="menu-dropdown">
+                            <div class="menu-dropdown-item">
+                                <div><a href="">Home V1</a><a id="hot">Hot</a></div>
+                                <div><a href="">Home V2</a><a id="hot">Hot</a></div>
+                                <div><a href="">Home V3</a><a id="hot">Hot</a></div>
+                                <div><a href="">Home V4</a></div>
+                                <div><a href="">Home V5</a></div>
+                                <div><a href="">Home V6</a></div>
+                                <div><a href="">Home V7</a></div>  
+                            </div>
+                            <div class="menu-dropdown-item">
+                                <div><a href="">Home V8</a></div>
+                                <div><a href="">Home V9</a></div>
+                                <div><a href="">Home V10</a></div>
+                                <div><a href="">Home V11</a></div>
+                                <div><a href="">Home V12</a></div>
+                                <div><a href="">Home V13</a><a id="hot">Hot</a></div>
+                                <div><a href="">Megastore</a><a id="hot">Hot</a></div>   
+                            </div>
+                            <div class="menu-dropdown-item">
+                                <div><a href="">Megamog</a><a id="hot">Hot</a></div>
+                                <div><a href="">Supergear</a><a id="hot">Hot</a></div>
+                                <div><a href="">Active Wear</a><a id="new">New</a></div>
+                                <div><a href="">Furniture Store</a></div>
+                                <div><a href="">Case Phone Store</a></div>
+                                <div><a href="">Socks Store</a></div>
+                                <div><a href="">Bedding Store</a></div>    
+                            </div>
+                            <div class="menu-dropdown-item">
+                                <div><a href="">Sneaker Store</a><a id="new">New</a></div>
+                                <div><a href="">Jewelry Store</a></div>
+                                <div><a href="">Bra Store</a><a id="hot">Hot</a></div>
+                                <div><a href="">Backpack Store</a></div>
+                                <div><a href="">Houseware Store</a></div>
+                                <div><a href="">Hat Store</a></div>
+                                <div><a href="">Bag Store</a></div>    
+                            </div>
+                            <div class="menu-dropdown-item">
+                                <div><a href="">Paintme Store</a></div>
+                                <div><a href="">Watch Store</a></div>
+                                <div><a href="">Header 1</a><a id="new">New</a></div>
+                                <div><a href="">Header 2</a></div>
+                                <div><a href="">Header 3</a><a id="hot">Hot</a></div>
+                                <div><a href="">Header 4</a></div>
+                                <div><a href="">Header 5</a></div>    
+                            </div>
+                            <div class="menu-dropdown-item">
+                                <div><a href="">Header Layout 6</a></div>
+                                <div><a href="">Header Layout 7</a></div>
+                                <div><a href="">Header Layout 8</a></div>
+                                <div><a href="">Header Layout 9</a></div>
+                                <div><a href="">Header Layout 10</a></div>
+                                <div><a href="">Header Layout 11</a></div>
+                                <div><a href="">Header Layout 12</a></div>   
+                            </div>
+                        </div>
+                    </li>
+                  
+                    <li>
+                        <a href="shop.html">Shop<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                        <div class="menu-dropdown">
+                            <div class="menu-dropdown-item">
+                                <div><a href="">Grid Layout</a></div>
+                                <div><a href="">Masonry Layout</a></div>
+                                <div> <a href="">Packery Layout</a></div>
+                                <div><a href="">List View</a></div>
+                                <div><a href="">Grid 2 Columns</a></div>
+                                <div><a href="">Grid 3 Columns</a></div>
+                            </div>
+                            <div class="menu-dropdown-item">
+                                <div><a href="">Grid 4 Columns</a></div>
+                                <div><a href="">Grid 5 Columns</a></div>
+                                <div><a href="">Left Sidebar</a></div>
+                                <div><a href="">Right Sidebar</a></div>
+                                <div><a href="">Canvas Sidebar</a></div>
+                                <div><a href="">List - Left Sidebar</a></div>
+                            </div>
+                            <div class="menu-dropdown-item">
+                                <div><a href="">Pagination</a></div>
+                                <div><a href="">Load More Button</a></div>
+                                <div><a href="">Infinit Scrolling</a></div>
+                                <div><a href="">Collection & Product</a></div>
+                            </div>
+                            <div class="menu-dropdown-item">
+                                <div><a href="">Hover Style 1</a></div>
+                                <div><a href="">Hover Style 2</a></div>
+                                <div><a href="">Hover Style 3</a></div>
+                            </div>
+                            <div class="menu-dropdown-item">
+                                <img id="season" src="assets/images/home/shop_megamenu_01.jpeg" alt="">
+                                <p>The new - season shoes edit</p>
+                                <a href="" id="shopnow">Shop Now</a>
+                            </div>  
+                        </div>
+                    </li>
+                   
+                    <li>
+                        <a href="product.html">Product<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                        <div class="menu-dropdown">
+                            <div class="menu-dropdown-item">
+                                <div><a href="">Product Layout 1</a></div>
+                                <div><a href="">Product Layout 2</a></div>
+                                <div><a href="">Product Layout 3</a></div>
+                               <div> <a href="">Product Layout 4</a></div>
+                                <div><a href="">Bottom Thumbnails</a></div>
+                                <div><a href="">Right Thumbnails</a></div>
+                                <div><a href="">Without Thumbnails</a></div>
+                                <div><a href="">Tab Accordions</a></div>
+                                <div><a href="">Tab Accordions 2</a></div>
+                            </div>
+                            <div class="menu-dropdown-item">
+                                <div><a href="">Images Swatch</a></div>
+                                <div><a href="">Full Width</a></div>
+                                <div><a href="">Custom Tab 1</a></div>
+                                <div><a href="">Custom Tab 2</a></div>
+                                <div><a href="">Upsell</a></div>
+                                <div><a href="">Real Time Visitors</a></div>
+                                <div><a href="">Save More</a></div>
+                            </div>
+                            <div class="menu-dropdown-item">
+                                <div><a href="">Simple Product</a></div>
+                                <div><a href="">Variable Product</a></div>
+                                <div><a href="">Grouped Product</a></div>
+                                <div><a href="">Bundle Product</a></div>
+                                <div><a href="">Product Video</a></div>
+                                <div><a href="">Inner Zoom #1</a></div>
+                                <div><a href="">Inner Zoom #2</a></div>
+                                <div><a href="">External Zoom</a></div>
+                                <div><a href="">PhotoSwipe Popup</a></div>
+                            </div>
+                            <div class="menu-dropdown-item">
+                                <p id="weekhighlight">This Week's Highlights</p>
+                                <div class="menu-dropdown-item-product-wrap">
+                                    <div class="menu-dropdown-item-product" id="menu-dropdown-item-product">
+                                        <div class="item">
+                                            <div class="item-top">
+                                                <img src="assets/images/home/product_fashion_23_a_1.jpg" alt="">
+                                                <div class="overlay-item1">
+                                                    <button class="addtocard">Add to Card</button>
+                                                </div>
+                                                <div class="overlay-item2">
+                                                    <div><span>Add to Wish List</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa-regular fa-star" aria-hidden="true"></i></a></div>
+                                                    <div><span>Add to Compare</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa fa-code-compare" aria-hidden="true"></i></a></div>
+                                                    <div><span>Quick View</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa-regular fa-eye" aria-hidden="true"></i></a></div> 
+                                                </div>
+                                                <div class="overlay-item3">
+                                                    <img src="assets/images/home/product_fashion_23_a_3.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="item-center">
+                                                <a href="">Boxy Denim Jacket</a>
+                                                <p>$25.00</p><p id="line-through">$21.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-top">
+                                                <img src="assets/images/home/product_fashion_12_b_1_1.jpeg" alt="">
+                                                <div class="overlay-item1">
+                                                    <button class="addtocard">Add to Card</button>
+                                                </div>
+                                                <div class="overlay-item2">
+                                                    <div><span>Add to Wish List</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa-regular fa-star" aria-hidden="true"></i></a></div>
+                                                    <div><span>Add to Compare</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa fa-code-compare" aria-hidden="true"></i></a></div>
+                                                    <div><span>Quick View</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa-regular fa-eye" aria-hidden="true"></i></a></div> 
+                                                </div>
+                                                <div class="overlay-item3">
+                                                    <img src="assets/images/home/product_fashion_12_b_3.jpg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="item-center">
+                                                <a href="">Oversized Jacket</a>
+                                                <p>$10.00</p><p id="line-through">$18.00</p>
+                                            </div> 
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-top">
+                                                <img src="assets/images/home/product_fashion_02_b_1_1.jpeg" alt="">
+                                                <div class="overlay-item1">
+                                                    <button class="addtocard">Add to Card</button>
+                                                </div>
+                                                <div class="overlay-item2">
+                                                    <div><span>Add to Wish List</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa-regular fa-star" aria-hidden="true"></i></a></div>
+                                                    <div><span>Add to Compare</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa fa-code-compare" aria-hidden="true"></i></a></div>
+                                                    <div><span>Quick View</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa-regular fa-eye" aria-hidden="true"></i></a></div> 
+                                                </div>
+                                                <div class="overlay-item3">
+                                                    <img src="assets/images/home/product_fashion_02_b_2_1.jpeg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="item-center">
+                                                <a href="">Boxy Denim Jacket</a>
+                                                <p>$25.00</p><p id="line-through">$21.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="item-top">
+                                                <img src="assets/images/home/product_fashion_30_b_1.jpeg" alt="">
+                                                <div class="overlay-item1">
+                                                    <button class="addtocard">Add to Card</button>
+                                                </div>
+                                                <div class="overlay-item2">
+                                                    <div><span>Add to Wish List</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa-regular fa-star" aria-hidden="true"></i></a></div>
+                                                    <div><span>Add to Compare</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa fa-code-compare" aria-hidden="true"></i></a></div>
+                                                    <div><span>Quick View</span><i class="fa-solid fa-caret-right"></i><a href=""><i class="fa-regular fa-eye" aria-hidden="true"></i></a></div> 
+                                                </div>
+                                                <div class="overlay-item3">
+                                                    <img src="assets/images/home/product_fashion_30_b_2.jpeg" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="item-center">
+                                                <a href="">Oversized Jacket</a>
+                                                <p>$10.00</p><p id="line-through">$18.00</p>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <a id="arrow-left"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+                                    <a id="arrow-right"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                                </div>
+                                <script>
+                                    let menu_dropdown_item_produc_wrap = document.getElementById("menu-dropdown-item-product");
+                                    $("#arrow-left").bind("click",function name(params) {
+                                        menu_dropdown_item_produc_wrap.scrollLeft=0;
+                                    })
+                                    $("#arrow-right").bind("click",function name(params) {
+                                        menu_dropdown_item_produc_wrap.scrollLeft=400;
+                                    })
+                                </script>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                        <div class="menu-dropdown-page">
+                            <a href="">Pop List</a>
+                            <a href="">Grid 3 Columns</a>
+                            <a href="blog.html">Grid 4 Columns</a>
+                            <a href="">Grid With Sidebar</a>
+                            <a href="blog-10picnic.html">Single Post 1</a>
+                            <a href="">Single Post 2</a>
+                            <a href="">Single Post 3</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="">Page<i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+                        <div class="menu-dropdown-page">
+                            <a href="aboutv1.html">About V1</a>
+                            <a href="">About V2</a>
+                            <a href="">About V3</a>
+                            <a href="faq.html">FAQs</a>
+                            <a href="404page.html">404 Page</a>
+                            <a href="contactus.html">Contact Us</a>
+                            <a href="findastore.html" >Find A Store</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-4 menu" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions">
+                <a class="bar"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            </div>
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header">
+                    <div class="menu-show">
+                        <div class="menu-show-wrap">
+                            <div class="menu-show-item" data-itemid="item1">
+                                <a href="index.html">Demo</a>
+                                <a id="plus"><i class="fa-sharp fa-solid fa-plus"></i></a>
+                                <a id="minus"><i class="fa fa-minus"></i></a>
+                            </div>
+                            <div class="menu-show-item-dropdown" id="item1">
+                                <div class="item">
+                                    <a href="">Fashion</a>
+                                </div>
+                                <div class="item">
+                                    <a href="">Fashion</a>
+                                </div>
+                                <div class="item">
+                                    <a href="">Minimog Store</a>
+                                </div>
+                                <div class="item">
+                                    <a href="">Header Layout</a>
+                                </div>
+                                <div class="item">
+                                    <a href="">Header Layout</a>
+                                </div>
+                            </div>
+                            <div class="menu-show-item" data-itemid="item2">
+                                <a href="shop.html">Shop</a>
+                                <a id="plus"><i class="fa-sharp fa-solid fa-plus"></i></a>
+                                <a id="minus"><i class="fa fa-minus"></i></a>
+                            </div>
+                            <div class="menu-show-item-dropdown" id="item2">
+                                <div class="item">
+                                    <a href="">Shop Pages</a>
+                                </div>
+                                <div class="item">
+                                    <a href="">Shop Sidebar</a>
+                                </div>
+                                <div class="item">
+                                    <a href="">Features</a>
+                                </div>
+                                <div class="item">
+                                    <a href="">Hover Style</a>
+                                </div>
+                            </div>
+                            <div class="menu-show-item" data-itemid="item3">
+                                <a href="product.html">Product</a>
+                                <a id="plus"><i class="fa-sharp fa-solid fa-plus"></i></a>
+                                <a id="minus"><i class="fa fa-minus"></i></a>
+                            </div>
+                            <div class="menu-show-item-dropdown" id="item3">
+                                <div class="item">
+                                    <a href="">Product Layout</a>
+                                </div>
+                                <div class="item">
+                                    <a href="">Product Detail</a>
+                                </div>
+                                <div class="item">
+                                    <a href="">Product Type</a>
+                                </div>
+                                <div class="item">
+                                    <a href="">Product Features</a>
+                                </div>
+                            </div>
+                            <div class="menu-show-item" data-itemid="item4">
+                                <a href="blog.html">Blog</a>
+                                <a id="plus"><i class="fa-sharp fa-solid fa-plus"></i></a>
+                                <a id="minus"><i class="fa fa-minus"></i></a>
+                            </div>
+                            <div class="menu-show-item-dropdown" id="item4">
+                                <div class="item">
+                                    <a href="">Post List</a>
+                                </div>
+                                <div class="item">
+                                    <a href="">Grid 3 Columns</a>
+                                </div>
+                                <div class="item">
+                                    <a href="blog.html">Grid 4 Columns</a>
+                                </div>
+                                <div class="item">
+                                    <a href="">Grid With Sidebar</a>
+                                </div>
+                                <div class="item">
+                                    <a href="blog-10picnic.html">Single Post 1</a>
+                                </div>
+                                <div class="item">
+                                    <a href="">Single Post 2</a>
+                                </div>
+                                <div class="item">
+                                    <a href="">Single Post 3</a>
+                                </div>
+                            </div>
+                            <div class="menu-show-item" data-itemid="item5">
+                                <a href="">Page</a>
+                                <a id="plus"><i class="fa-sharp fa-solid fa-plus"></i></a>
+                                <a id="minus"><i class="fa fa-minus"></i></a>
+                            </div>
+                            <div class="menu-show-item-dropdown" id="item5">
+                                <div class="item">
+                                    <a href="aboutv1.html">About V1</a>
+                                </div>
+                                <div class="item">
+                                    <a href="">About V2</a>
+                                </div>
+                                <div class="item">
+                                    <a href="">About V3</a>
+                                </div>
+                                <div class="item">
+                                    <a href="faq.html">FAQs</a>
+                                </div>
+                                <div class="item">
+                                    <a href="404page.html">404 Page</a>
+                                </div>
+                                <div class="item">
+                                    <a href="contactus.html">Contact Us</a>
+                                </div>
+                                <div class="item">
+                                    <a href="findastore.html">Find A Store</a>
+                                </div>
+                            </div>
+                            <div class="menu-show-item-myaccount">
+                                <i class="fa-regular fa-user" aria-hidden="true"></i><span>My Account</span>
+                            </div>
+                            <button>Sign in</button>
+                            <button>Create An Account</button>
+                        </div>
+                        <div class="menu-show-close"><i class="fa-solid fa-xmark"></i></div>
+                    </div>
+                </div>
+                <script>
+                    $(".menu-show-item-dropdown").hide();
+                    $(".menu-show-item").click(function name(params) {
+                        $(this).children("#plus").toggle();
+                        $(this).children("#minus").toggle();
+                        let itemid = $(this).data("itemid");
+                        $("#"+itemid).slideToggle();
+                    })
+                </script>
+            </div>
+            <div class="col-4 text-center center">
+                <img src="assets/images/home/dark-logo_1n.png" alt="" onclick="window.location.href='index.html'">
+            </div>
+            <div class="col-4 right">
+                <ul>
+                    <li class="search"><a href=""><i class="fa fa-search" aria-hidden="true"></i></a><span class="tooltiptext">Search</span></li>
+                    <li class="user"><a href=""><i class="fa-regular fa-user" aria-hidden="true"></i></a><span class="tooltiptext">Sign in</span></li>
+                    <li class="star"><a href="" ><i class="fa-regular fa-star" aria-hidden="true"></i></a><span class="tooltiptext">My Wish List</span><a>0</a></li>
+                    <li class="mycart"><a href=""><i class="fa fa-bag-shopping" aria-hidden="true"></i></a><span class="tooltiptext">My Cart</span><a>0</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- page content -->
+    <div class="page-content">
+        <div class="page-content-wrap">
+            <div class="img">
+                <img src="assets/images/404page/404-image.png" alt="">
+            </div>
+            <h1>Oops!</h1>
+            <h1>Page not found!</h1>
+            <button onclick="window.location.href='index.html'">Go to Home</button>
+        </div>
+    </div>
+
+    <!-- info -->
+    <div class="info container-fluid">
+        <div class="row">
+            <div class="info-item col-md-12 col-lg-3">
+                <img src="assets/images/home/icon_box_free_ship.png" alt="">
+                <div class="text">
+                    <h2>Free Shipping</h2>
+                    <p>Free Shipping for orders over £130</p>
+                </div>
+            </div>
+            <div class="info-item col-md-12 col-lg-3">
+                <img src="assets/images/home/icon_box_money_guarantee.png" alt="">
+                <div class="text">
+                    <h2>Money Guarantee</h2>
+                    <p>Within 30 days for an exchange.</p>
+                </div>
+            </div>
+            <div class="info-item col-md-12 col-lg-3">
+                <img src="assets/images/home/icon_box_support.png" alt="">
+                <div class="text">
+                    <h2>Online Support</h2>
+                    <p>24 hours a day, 7 days a week</p>
+                </div>
+            </div>
+            <div class="info-item col-md-12 col-lg-3">
+                <img src="assets/images/home/icon_box_payment.png" alt="">
+                <div class="text">
+                    <h2>Flexible Payment</h2>
+                    <p>Pay with Multiple Credit Cards</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- contact -->
+    <div class="contact container-fluid">
+        <div class="row">
+            <div class="contact-item col-md-12 col-lg-3 first">
+                <h2>Company</h2>
+                <p>Find a location nearest you.</p>
+                <a href="">See Our Stores</a>
+                <br>
+                <a href="">+391 (0)35 2568 4593</a>
+                <a href="">hello@domain.com</a>
+            </div>
+            <div class="contact-item col-md-12 col-lg-3 toborder">
+                <div>
+                    <h2>Information</h2>
+                    <a href="">My account</a>
+                    <a href="">Login</a>
+                    <a href="">My cart</a>
+                    <a href="">Wishlist</a>
+                    <a href="">Check out</a>
+                </div>
+                <div class="contact-responsive-item information-menu" data-contactid="contactitem1">
+                    <h2>Information</h2>
+                    <a id="plus"><i class="fa-sharp fa-solid fa-plus"></i></a>
+                    <a id="minus"><i class="fa fa-minus"></i></a>
+                </div>
+                <div class="infomation" id="contactitem1">
+                    <a href="">My account</a>
+                    <a href="">Login</a>
+                    <a href="">My cart</a>
+                    <a href="">Wishlist</a>
+                    <a href="">Check out</a>
+                </div>
+            </div>
+            <div class="contact-item col-md-12 col-lg-3 toborder">
+                <div>
+                    <h2>Services</h2>
+                    <a href="">About Us</a>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Faq's</a>
+                    <a href="">Contact us</a>
+                    <a href="">Delivery Information</a>
+                </div>
+                <div class="contact-responsive-item services-menu" data-contactid="contactitem2">
+                    <h2>Services</h2>
+                    <a id="plus"><i class="fa-sharp fa-solid fa-plus"></i></a>
+                    <a id="minus"><i class="fa fa-minus"></i></a>
+                </div>
+                <div class="services" id="contactitem2">
+                    <a href="">About Us</a>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Faq's</a>
+                    <a href="">Contact us</a>
+                    <a href="">Delivery Information</a>
+                </div>
+            </div>
+            <div class="contact-item col-md-12 col-lg-3 last">
+                <h2>Subscribe</h2>
+                <p>Enter your email below to be the first to know about new collections and product launches.</p>
+                <div class="email">
+                    <i class="fa fa-envelope" aria-hidden="true"></i><input type="text" placeholder="Your email address"><button><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <script>
+        $(".contact-responsive-item").children("#minus").hide();
+        $(".contact-responsive-item").click(function name(params) {
+            $(this).children("#plus").toggle();
+            $(this).children("#minus").toggle();
+            let contactid = $(this).data("contactid");
+            $("#"+contactid).slideToggle();
+        })
+    </script>
+
+    <!-- footer -->
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="img col-md-12 col-lg-4">
+                <img src="assets/images/home/payment.png" alt="">
+            </div>
+            <div class="logo col-md-12 col-lg-4 text-center">
+                <p>&copy; MINIMOG 2022</p>
+            </div>
+            <div class="link col-md-12 col-lg-4 last">
+                <a href="https://www.facebook.com/profile.php?id=100009223194372" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/phuthinhnguyen1407/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+        </div>
+    </footer>
+    <div id="scrolltop">
+        <img src="assets/images/home/totop.png" alt="">
+    </div>
+    <script>
+        $("#scrolltop").click(function name(params) {
+            $("html").animate({scrollTop:0});
+        })
+        window.onscroll=function(){scrolltop()};
+        function scrolltop(){
+            if ((document.body.scrollTop>100) || (document.documentElement.scrollTop>100)){
+            $("#scrolltop").addClass("scrolltop-show");
+            $("nav").addClass('nav-sticky');
+            }
+            else {
+                $("#scrolltop").removeClass("scrolltop-show");
+                $("nav").removeClass('nav-sticky');
+            };
+        }
+    </script>
+    <div class="message">
+        <img src="assets/images/home/mess.png" alt="">
+    </div>
+</body>
+</html>

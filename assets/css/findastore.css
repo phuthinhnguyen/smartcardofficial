@@ -1,0 +1,120 @@
+.findastore-head {
+  font-family: "Jost";
+  text-align: center;
+  margin-top: 50px;
+}
+.findastore-head h1 {
+  font-weight: 400;
+  font-size: 40px;
+}
+.findastore-head div {
+  display: inline-block;
+}
+.findastore-head div a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.findastore-content {
+  font-family: "Jost";
+  margin: auto;
+  max-width: 1200px;
+  padding: 20px;
+  height: 850px;
+}
+.findastore-content .findastore-wrap {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+.findastore-content .findastore-wrap .item1 {
+  width: 40%;
+}
+.findastore-content .findastore-wrap .item1 .item1-head {
+  margin-bottom: 20px;
+  height: 50px;
+}
+.findastore-content .findastore-wrap .item1 .item1-head input {
+  width: 74%;
+  height: 45px;
+  border-radius: 5px;
+  padding-left: 20px;
+  border: 1px solid rgb(194, 193, 193);
+}
+.findastore-content .findastore-wrap .item1 .item1-head button {
+  width: 24%;
+  height: 45px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+.findastore-content .findastore-wrap .item1 .item1-head button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.findastore-content .findastore-wrap .item1 .item1-content {
+  height: 680px;
+  overflow-y: scroll;
+}
+.findastore-content .findastore-wrap .item1 .item1-content .item1-content-item-img {
+  width: 100%;
+  text-align: left;
+  margin-top: 20px;
+  display: flex;
+}
+.findastore-content .findastore-wrap .item1 .item1-content .item1-content-item-img .item1-content-item-img-left {
+  width: 30%;
+}
+.findastore-content .findastore-wrap .item1 .item1-content .item1-content-item-img .item1-content-item-img-left img {
+  width: 100%;
+  height: auto;
+}
+.findastore-content .findastore-wrap .item1 .item1-content .item1-content-item-img .item1-content-item-img-right {
+  width: 70%;
+  padding: 10px 20px 10px;
+}
+.findastore-content .findastore-wrap .item1 .item1-content .item1-content-item-img .item1-content-item-img-right h2 {
+  font-size: 18px;
+  font-weight: 450;
+  margin: 0;
+}
+.findastore-content .findastore-wrap .item1 .item1-content .item1-content-item-img .item1-content-item-img-right p {
+  font-size: 14px;
+  color: grey;
+}
+.findastore-content .findastore-wrap .item1 .item1-content .item1-content-item-img .item1-content-item-img-right a {
+  text-decoration: underline;
+}
+.findastore-content .findastore-wrap .item1 .item1-content .item1-content-item-time {
+  background-color: rgb(241, 238, 238);
+  text-align: left;
+  padding: 10px 15px 10px;
+}
+.findastore-content .findastore-wrap .item2 {
+  width: 58%;
+  color: black;
+  height: 750px;
+  text-align: left;
+}
+.findastore-content .findastore-wrap .item2 h1 {
+  text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  .findastore-content {
+    height: 1350px;
+  }
+  .findastore-content .findastore-wrap {
+    display: block;
+  }
+  .findastore-content .findastore-wrap .item1 {
+    width: 100%;
+  }
+  .findastore-content .findastore-wrap .item2 {
+    width: 100%;
+    margin-top: 30px;
+    height: 500px;
+  }
+}/*# sourceMappingURL=findastore.css.map */

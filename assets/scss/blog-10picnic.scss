@@ -1,0 +1,440 @@
+@import "variable";
+@import "font";
+@import "mixin";
+
+
+
+//CSS breadcrumb
+.blog-head{
+    @include font($fontJost);
+    @include pagehead;
+}
+
+
+//CSS blog-10picnic
+.blog-10picnic-content-container{
+    @include font($fontJost);
+    max-width: 1300px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    column-gap: 30px;
+    .blog-10picnic-content-item1{
+        width: 75%;
+        text-align: left;
+        h3{
+            font-size: 22px;
+            font-weight: 500;
+            line-height: 34px;
+            margin-top: 50px;
+        }
+        >p{
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 30px;
+            color: gray;
+            margin-top: 20px;
+        }
+        .blog-10picnic-content-item1-head{
+            h2{
+                font-size: 38px;
+                font-weight: 500;
+                margin-top: 10px;
+                transition: 0.3s;
+                text-align: center;
+                padding: 0 70px;
+            }
+            p{
+                text-align: center;
+                color: gray;
+                &:first-of-type{
+                    font-size: 13px;
+                    font-weight: 500;
+                    margin: 0;
+                    margin-top: 18px;
+                    transition: 0.3s;
+                    text-align: center;
+                    color: black;
+                    &:hover{
+                        cursor: pointer;
+                        color: gray;
+                    }
+                }
+            }
+        }
+        .blog-10picnic-content-item1-img1{
+            margin-top: 30px;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .blog-10picnic-content-item1-img2{
+            text-align: center;
+            margin-top: 30px;
+            img{
+                width: 100%;
+                height: auto;
+            }
+            div{
+                margin-top: 10px;
+                font-size: 14px;
+                a{
+                    text-decoration: underline;
+                    transition: .4s;
+                }
+            }
+        }
+        #thanks{
+            text-align: center;
+            font-size: 25px;
+            margin: 50px 0;
+        }
+        .blog-10picnic-content-item1-tagshare{
+            width: 100%;
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            .blog-10picnic-content-item1-tagshare-tag{
+                span{
+                    font-weight: 500;
+                }
+                a{
+                    transition: .4s;
+                }
+            }
+            .blog-10picnic-content-item1-tagshare-share{
+                span{
+                    font-weight: 500;
+                    margin-right: 20px;
+                }
+                a{
+                    margin-right: 20px;
+                    transition: .4s;
+                }
+            }
+        }
+        .next{
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+            .next-wrap{
+                width: 30%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .next-text{
+                    user-select: none;
+                    cursor: pointer;
+                    h3{
+                        margin: 0;
+                        margin-top: 2px;
+                        font-size: 12px;
+                        color: gray;
+                    }
+                    p{
+                        margin: 0;
+                        font-weight: 500;
+                        color: black;
+                        &:hover{
+                            color: gray;
+                        }
+                    }
+                }
+            }
+        }
+        .slide{
+            width: 100%;
+            margin: auto;
+            margin-top: 80px;
+            position: relative;
+            >h3{
+                text-align: center;
+                font-size: 35px;
+                font-weight: 400;
+            }
+            .slide-content{
+                display: flex;
+                width:90%;
+                column-gap: 20px;
+                overflow-x: hidden;
+                margin: auto;
+                margin-top: 30px;
+                scroll-behavior: smooth;
+                scroll-snap-align: start;
+                .slide-content-item{
+                    min-width: 33%;
+                    user-select: none;
+                    cursor: pointer;
+                    .slide-content-item-img{
+                        p{
+                            font-size: 12px;
+                            margin: 0;
+                            margin-top: 5px;
+                            color: black;
+                            font-weight: 500;
+                            &:hover{
+                                color: gray;
+                            }
+                        }
+                        h3{
+                            margin: 0;
+                            font-size: 18px;
+                            &:hover{
+                                color: gray;
+                            }
+                        }
+                        img{
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                    
+                }
+            }
+            #arrow-right, #arrow-left{
+                position: absolute;
+                background-color: white;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                border: 1px solid lightgray;
+                text-align: center;
+                line-height: 40px;
+                top: 50%;
+                transition: .4s;
+                &:hover{
+                    background-color: black;
+                }
+            }
+            #arrow-left{
+                left: 0;
+            }
+            #arrow-right{
+                right:0;
+            }
+            
+        }
+        .comment{
+            width: 100%;
+            h3{
+                font-size: 35px;
+                margin-top: 70px;
+                font-weight: 400;
+                text-align: center;
+            }
+            textarea{
+                resize: none;
+                width: 100%;
+                border-radius: 5px;
+                border: 1px solid lightgray;
+                padding: 20px;
+                margin: auto;
+                display: block;
+            }
+            .input-name-email{
+                display: flex;
+                width: 100%;
+                margin: auto;
+                margin-top: 30px;
+                justify-content: space-between;
+                input{
+                    width: 48%;
+                    height: 45px;
+                    border-radius: 5px;
+                    border: 1px solid lightgray;
+                    padding: 20px;
+                    font-size: 15px;
+                }
+            }
+            button{
+                margin-top:30px;
+                padding: 10px 35px;
+                background-color: black;
+                color: white;
+                border-radius: 5px;
+                transition: transform .3s;
+                &:hover{
+                    cursor: pointer;
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+    .blog-10picnic-content-item2{
+        width: 25%;
+        padding-top: 10px;
+        .blog-10picnic-content-item2-categories{
+            text-align: left;
+            h3{
+                font-weight: 500;
+                margin-bottom: 25px;
+            }
+            .blog-10picnic-content-item2-categories-item{
+                color: gray;
+                margin-bottom: 20px;
+                a{
+                    color: gray;
+                    transition: .3s;
+                    &:hover{
+                        color: lightgray;
+                    }
+                }
+            }
+        }
+        .blog-10picnic-content-item2-recentpost{
+            margin-top: 60px;
+            h3{
+                font-weight: 500;
+                margin-bottom: 25px;
+            }
+            .blog-10picnic-content-item2-recentpost-item{
+                width: 100%;
+                display: flex;
+                margin-top: 25px;
+                &:hover{
+                    cursor: pointer;
+                }
+                .blog-10picnic-content-item2-recentpost-item-img{
+                    width: 30%;
+                    padding-top: 5px;
+                    img{
+                        min-height: 60px;
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .blog-10picnic-content-item2-recentpost-item-text{
+                    width: 70%;
+                    margin-left: 10px;
+                    h3{
+                        margin: 0;
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 24px;
+                        transition: .4s;
+                        &:hover{
+                            color: lightgray;
+                        }
+                    }
+                    p{
+                        margin: 0;
+                        color: gray;
+                        font-size: 15px;
+                        margin-top: 5px;
+                    }
+                }
+            }
+        }
+        .blog-10picnic-content-item2-archive{
+            margin-top: 60px;
+            h3{
+                font-weight: 500;
+                margin-bottom: 25px;
+            }
+            a{
+                display: block;
+                color: gray;
+                font-size: 16px;
+                margin-bottom: 20px;
+                transition: 0.3s;
+                &:hover{
+                    color: lightgray;
+                }
+            }
+        }
+        .blog-10picnic-content-item2-tag{
+            margin-top: 60px;
+            width: 100%;
+            h3{
+                font-weight: 500;
+                margin-bottom: 20px;  
+            }
+            a{
+                color: gray;
+                display: inline-block;
+                padding: 8px 10px 8px 0;
+                transition: .3s;
+                &:hover{
+                    color: lightgray;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:991px){
+    .blog-10picnic-content-container{
+        display: block;
+        .blog-10picnic-content-item1{
+            width: 100%;
+        }
+        .blog-10picnic-content-item2{
+            width: 100%;
+            margin-top: 30px;
+            .blog-10picnic-content-item2-recentpost{
+                .blog-10picnic-content-item2-recentpost-item{
+                    .blog-10picnic-content-item2-recentpost-item-img{
+                        width: 15%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:767px){
+    .blog-10picnic-content-container{
+        .blog-10picnic-content-item1{
+            .blog-10picnic-content-item1-head{
+                h2{
+                    padding: 0;
+                }
+            }
+            .slide{
+                .slide-content{
+                    .slide-content-item{
+                        min-width: 50%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:575px){
+    .blog-10picnic-content-container{
+        .blog-10picnic-content-item1{
+            .blog-10picnic-content-item1-head{
+                h2{
+                    font-size: 28px;
+                }
+            }
+            h3,#thanks{
+                font-size: 20px;
+            }
+            .blog-10picnic-content-item1-tagshare{
+                display: block;
+                .blog-10picnic-content-item1-tagshare-share{
+                    margin-top: 10px;
+                }
+            }
+            .slide{
+                .slide-content{
+                    .slide-content-item{
+                        min-width: 100%;
+                    }
+                }
+            }
+            .comment{
+                .input-name-email{
+                    display: block;
+                    input{
+                       width: 100%;
+                       &:last-of-type{
+                        margin-top: 20px;
+                       }
+                    }
+                }
+            }
+        }
+    }
+}

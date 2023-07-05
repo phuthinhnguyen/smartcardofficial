@@ -1,0 +1,103 @@
+@import "variable";
+@import "font";
+@import "mixin";
+
+
+
+//CSS breadcrumb
+.blog-head{
+    @include font($fontJost);
+    @include pagehead;
+}
+
+
+//CSS blog
+.blog-content-container{
+    @include font($fontJost);
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 30px;
+    column-gap: 20px;
+    .blog-content-item{
+        width: 100%;
+        p{
+            font-size: 12px;
+            font-weight: 500;
+            margin: 0;
+            margin-top: 18px;
+            transition: 0.3s;
+            &:hover{
+                color: rgb(148, 146, 146);
+                cursor: pointer;
+            }
+        }
+        h2{
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 30px;
+            margin: 0;
+            margin-top: 12px;
+            transition: 0.3s;
+            &:hover{
+                color: rgb(148, 146, 146);
+                cursor: pointer;
+            }
+        }
+        .blog-content-item-img{
+            .blog-content-item-img-wrap{
+                overflow: hidden;
+                &:hover img{
+                    transform: scale(1.1);
+                }
+                img{
+                    transition: transform .5s;
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+.blog-pagination{
+    @include font($fontJost);
+    max-width: 900px;
+    height: 60px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 120px;
+    .blog-pagination-wrap{
+        display: flex;
+        justify-content: center;
+        column-gap: 15px;
+        a{
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgb(236, 234, 234);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:hover{
+                color: white;
+                background-color: black;
+            }
+        }
+     }
+}
+@media screen and (max-width:1200px){
+    .blog-content-container{
+        grid-template-columns: auto auto;
+    }  
+}
+@media screen and (max-width:576px){
+    .blog-content-container{
+        grid-template-columns: auto;
+    }  
+}

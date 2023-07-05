@@ -1,0 +1,118 @@
+@import "variable";
+@import "font";
+@import "mixin";
+
+
+
+//CSS breadcrumb
+.findastore-head{
+    @include font($fontJost);
+    @include pagehead;
+}
+
+
+//CSS findastore
+.findastore-content{
+    @include font($fontJost);
+    margin: auto;
+    max-width: 1200px;
+    padding: 20px;
+    height: 850px;
+    .findastore-wrap{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        .item1{
+            width: 40%;
+            .item1-head{
+                margin-bottom: 20px;
+                height: 50px;
+                input{
+                    width: 74%;
+                    height: 45px;
+                    border-radius: 5px;
+                    padding-left: 20px;
+                    border: 1px solid rgb(194, 193, 193);
+                }
+                button{
+                    width: 24%;
+                    height: 45px;
+                    background-color: black;
+                    color: white;
+                    border-radius: 5px;
+                    transition: transform 0.3s;
+                    &:hover{
+                        cursor: pointer;
+                        transform: scale(1.05);
+                    }
+                }
+            }
+            .item1-content{
+                height: 680px;
+                overflow-y: scroll;
+                .item1-content-item-img{
+                    width: 100%;
+                    text-align: left;
+                    margin-top: 20px;
+                    display: flex;
+                    .item1-content-item-img-left{
+                        width: 30%;
+                    }
+                    .item1-content-item-img-left img{
+                        width: 100%;
+                        height: auto;
+                    }
+                    .item1-content-item-img-right{
+                        width: 70%;
+                        padding: 10px 20px 10px;
+                        h2{
+                            font-size: 18px;
+                            font-weight: 450;
+                            margin: 0;
+                        }
+                        p{
+                            font-size: 14px;
+                            color: grey;
+                        }
+                        a{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                .item1-content-item-time{
+                    background-color: rgb(241, 238, 238);
+                    text-align: left;
+                    padding: 10px 15px 10px;
+                }
+            }
+        }
+        .item2{
+            width: 58%;
+            color: black;
+            height: 750px;
+            text-align: left;
+            h1{
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:992px) {
+    .findastore-content{
+        height: 1350px;
+        .findastore-wrap{
+            display: block;
+            .item1{
+                width: 100%;
+            }
+            .item2{
+                width: 100%;
+                margin-top: 30px;
+                height: 500px;
+            }
+        }
+    }
+ 
+}

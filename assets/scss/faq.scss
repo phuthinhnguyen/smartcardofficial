@@ -1,0 +1,97 @@
+@import "variable";
+@import "font";
+@import "mixin";
+
+
+
+//CSS breadcrumb
+.faq-head{
+    @include font($fontJost);
+    @include pagehead;
+}
+
+//CSS faq
+.faq-container{
+    @include font($fontJost);
+    max-width: 900px;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 60px;
+    .faq-content{
+        text-align: center;
+        .faq-content-img{
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .faq-content-text{
+            text-align: left;
+            margin-top: 50px;
+            h2{
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 30px;
+            }
+            p{
+                color: gray;
+                line-height: 30px;
+                margin-top: 10px;
+            }
+        }
+        .faq-content-menudropdown{
+            margin-top: 50px;
+            .faq-content-menudropdown-item{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                cursor: pointer;
+                border-bottom: 1px solid lightgray;
+                margin-bottom: 30px;
+                h3{
+                    font-weight: 500;
+                    font-size: 18px;
+                }
+                a{
+                    &:hover{
+                        color: gray;
+                    }
+                    &:last-of-type{
+                        display: none;
+                    }
+                }
+            }
+            .borderbottom{
+                border-bottom: 1px solid black; 
+            }
+            .faq-content-menudropdown-item-show{
+                margin-bottom: 30px;
+                p{
+                    color: gray;
+                    line-height: 30px;
+                    margin-left: 0;
+                    text-align: left;
+                }
+                ul{
+                    text-align: left;
+                    line-height: 30px;
+                    color: gray;
+                    list-style-type: circle;
+                    margin-left: 20px;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:768px){
+    .faq-container{
+        .faq-content{
+            .faq-content-text{
+                h2{
+                    font-size: 18px; 
+                }
+            }
+        }
+    }
+}
